@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="myportfo.css">
+
+    <script src="https://kit.fontawesome.com/944d189c85.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo3.jpeg-removebg-preview.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#Contact">Contact Me</a></li>
+
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>CS Engineering Student</p>
+                <h1>Here , I'm <br>Shaikh <span>Ismail</span></h1>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="my2.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="nano">About Me</h1>
+                        <p>SHAIKH ISMAIL SARDAR is my name. I'm a CS engineering student at MIT Aurangabad/Chh. Sambhaji
+                            Nagar, and I'm really interested in technical fields like web application development and
+                            generative AI tools.
+                            Thus, as an intermediate front-end developer, I study [Fundamentals of GEN AI & AI tools]
+
+                            languages: JavaScript, C++, HTML, and CSS.</p>
+
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <br>
+
+                            <ul>
+                                <li><span>UI/UX</span><br>beginner to Design web sites </li>
+                                <li><span>Web Development </span><br>WebSites Development</li>
+                                <li><span> Aspiring AI Engineer</span><br> learning concept like , <br> GEN AI , AI
+                                    Fundamentals , AI tools</li>
+                                <li><span>Languages </span><br>JavaScript , C++ , HTML & CSS</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+
+
+                            <ul>
+                                <li><span>2023</span><br>Completed 10+2 From Home Town Udgir Dist. Latur</li>
+                                <li><span>2023-2027</span><br>CS Engineering From MIT Aurangabad/Chh. Sambhaji Nagar
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------------------------------------------------------------------------->
+
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>ismailpromt2i@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>77xxxxxxx0</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ismail-shaikh-19798a335/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Ismail-dcode/myProject" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+
+                    </div>
+                    <a href="My Portfolio.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="message" row="6" placeholder="your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @Ismail <i class="fa-solid fa-heart"></i> | All Rights Are Reserved </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200";
+
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzEDwOQHI0-l9yLrefuSVl7VpskI-3XnQRR11T9ryoUTGrwuARKzeobpxFT6gNAxzW0ew/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent succefully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+</body>
+
+</html>
