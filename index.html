@@ -19,7 +19,7 @@
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#Projects">Projects</a></li>
                     <li><a href="#Contact">Contact Me</a></li>
 
                     <i class="fa-solid fa-x" onclick="closemenu()"></i>
@@ -45,12 +45,14 @@
                     </div>
                     <div class="about-col-2">
                         <h1 class="nano">About Me</h1>
+                        <br>
                         <p>SHAIKH ISMAIL SARDAR is my name. I'm a CS engineering student at MIT Aurangabad/Chh. Sambhaji
                             Nagar, and I'm really interested in technical fields like web application development and
                             generative AI tools.
                             Thus, as an intermediate front-end developer, I study [Fundamentals of GEN AI & AI tools]
                             <br>
-                            languages: JavaScript, C++, HTML, and CSS.</p>
+                            languages: JavaScript, C++, HTML, and CSS.
+                        </p>
 
                         <div class="tab-title">
                             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -84,7 +86,37 @@
         </div>
     </div>
     <!----------------------------------------------------------------------------------------------------------->
+    <h4 id="Projects"></h4>
+    <h2 class="Section-title">Recent <span>Projects</span></h2>
+    <section class="my_projects" id="project">
 
+      
+            <div class="project_container">
+                <article class="project_card">
+                    <a href="" target="_blank" class="project_image">
+                        <img src="Screenshot 2024-10-29 173715.png" alt="image" class="project_image">
+
+                    </a>
+                    <div class="project_data">
+            
+                        <p class="project_detail">
+                            It is an email validator that checks whether the email is in the right format; if
+                            not,<br> It indicates that it is incorrect.
+                        </p>
+                        <br>
+                        <div class="projects_skills">
+                            <pre>By Using : HTML & CSS , JavaScript, API [Email validator]</pre>
+                        </div>
+                        <br>
+                        <a href="https://ismail-dcode.github.io/myProject/" target="_blank" class="project_button">
+                            <i class="fa-solid fa-link"></i>
+                            <span>Visit Project</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+       
+    </section>
     <div id="Contact">
         <div class="container">
             <div class="row">
@@ -173,13 +205,13 @@
         })
     </script>
 
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-<script>
-    var typed = new Typed('#element', {
-        strings: ['Aspiring AI engineer', 'Expert in using GEN AI Tools ', 'Web Developer [Front end]'],
-        typeSpeed: 50,
-    })
-</script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Aspiring AI engineer', 'Expert in using GEN AI Tools ', 'Web Developer [Front end]'],
+            typeSpeed: 50,
+        })
+    </script>
 
 
 </body>
