@@ -29,6 +29,10 @@
             <div class="header-text">
                 <p>CS Engineering Student</p>
                 <h1>Here , I'm <br>Shaikh <span>Ismail</span></h1>
+                <br>
+                <span id="element"></span>
+                <br>
+                <a href="My Portfolio.pdf" download class="btn btn2">Download CV</a>
             </div>
         </div>
     </div>
@@ -45,7 +49,7 @@
                             Nagar, and I'm really interested in technical fields like web application development and
                             generative AI tools.
                             Thus, as an intermediate front-end developer, I study [Fundamentals of GEN AI & AI tools]
-
+                            <br>
                             languages: JavaScript, C++, HTML, and CSS.</p>
 
                         <div class="tab-title">
@@ -91,7 +95,7 @@
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/ismail-shaikh-19798a335/" target="_blank"><i
                                 class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/Ismail-dcode" target="_blank"><i
+                        <a href="https://github.com/Ismail-dcode/myProject" target="_blank"><i
                                 class="fa-brands fa-github"></i></a>
 
                     </div>
@@ -168,6 +172,14 @@
                 .catch(error => console.error('Error!', error.message))
         })
     </script>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+        strings: ['Aspiring AI engineer', 'Expert in using GEN AI Tools ', 'Web Developer [Front end]'],
+        typeSpeed: 50,
+    })
+</script>
 
 
 </body>
