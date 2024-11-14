@@ -19,7 +19,7 @@ function openmenu() {
 
 }
 function closemenu() {
-    sidemenu.style.right = "-200";
+    sidemenu.style.right = "-200px";
 
 }
 
@@ -40,10 +40,5 @@ form.addEventListener('submit', e => {
 
     })
     
-     src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"
-
-        var typed = new Typed('#element', {
-            strings: ['Aspiring AI engineer', 'Expert in using GEN AI Tools ', 'Web Developer [Front end]'],
-            typeSpeed: 50,
-        })
+     
     
