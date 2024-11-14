@@ -21,102 +21,106 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#Projects">Projects</a></li>
                     <li><a href="#Contact">Contact Me</a></li>
-
-                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                    <i id="sir" class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <i id="sir" class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
-            <div class="header-text">
-                <p>CS Engineering Student</p>
-                <h1>Here , I'm <br>Shaikh <span>Ismail</span></h1>
-                <br>
-                <span id="element"></span>
-                <br>
-                <a href="Resume 1st Pdf.pdf" download class="btn btn2">Download CV</a>
-            </div>
         </div>
     </div>
     <div>
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="myAbout.jpg">
-                    </div>
-                    <div class="about-col-2">
-                        <h1 class="nano">About Me</h1>
-                        <br>
-                        <p>SHAIKH ISMAIL SARDAR is my name. I'm a CS engineering student at MIT Aurangabad/Chh. Sambhaji
-                            Nagar, and I'm really interested in technical fields like web application development and
-                            generative AI tools.
-                            Thus, as an intermediate front-end developer, I study [Fundamentals of GEN AI & AI tools]
-                            <br>
-                            languages: JavaScript, C++, HTML, and CSS.
-                        </p>
-
-                        <div class="tab-title">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <br>
-
-                            <ul>
-                                <li><span>UI/UX</span><br>beginner to Design web sites </li>
-                                <li><span>Web Development </span><br>WebSites Development</li>
-                                <li><span> Aspiring AI Engineer</span><br> learning concept like , <br> GEN AI , AI
-                                    Fundamentals , AI tools</li>
-                                <li><span>Languages </span><br>JavaScript , C++ , HTML & CSS</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-
-
-                            <ul>
-                                <li><span>2023</span><br>Completed 10+2 From Home Town Udgir Dist. Latur</li>
-                                <li><span>2023-2027</span><br>CS Engineering From MIT Aurangabad/Chh. Sambhaji Nagar
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-
+        <div class="header-text">
+            <p>CS Engineering Student</p>
+            <h1>Here , I'm <br><span>Shaikh Ismail</span></h1>
+           
+            <span id="element"></span>
+            <br>
+            <a href="Resume 1st Pdf.pdf" download class="btn btn2">Download CV</a>
+        </div>
+    </div>
+    <!------------------------------------------------------------------------------------------------------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="myAbout.jpg">
                 </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <p>SHAIKH ISMAIL SARDAR is my name. I'm a CS engineering student at MIT Aurangabad/Chh. Sambhaji
+                        Nagar, and I'm really interested in technical fields like web application development and
+                        generative AI tools.
+                        Thus, as an intermediate front-end developer, I study [Fundamentals of GEN AI & AI tools]
+                        <br>
+                        languages: JavaScript, C++, HTML, and CSS.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <br>
+
+                        <ul>
+                            <li><span>UI/UX</span><br>beginner to Design web sites </li>
+                            <li><span>Web Development </span><br>WebSites Development</li>
+                            <li><span> Aspiring AI Engineer</span><br> learning concept like , <br> GEN AI , AI
+                                Fundamentals , AI tools</li>
+                            <li><span>Languages </span><br>JavaScript , C++ , HTML & CSS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+
+
+                        <ul>
+                            <li><span>2023</span><br>Completed 10+2 From Home Town Udgir Dist. Latur</li>
+                            <li><span>2023-2027</span><br>CS Engineering From MIT Aurangabad/Chh. Sambhaji Nagar
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
+
     <!----------------------------------------------------------------------------------------------------------->
+
     <h4 id="Projects"></h4>
     <h2 class="Section-title">Recent <span>Projects</span></h2>
     <section class="my_projects" id="project">
 
-      
-            <div class="project_container">
-                <article class="project_card">
-                    <a href="" target="_blank" class="project_image">
-                        <img src="Screenshot 2024-10-29 173715.png" alt="image" class="project_image">
 
-                    </a>
-                    <div class="project_data">
-            
-                        <p class="project_detail">
-                            It is an email validator that checks whether the email is in the right format; if
-                            not,<br> It indicates that it is incorrect.
-                        </p>
-                        <br>
-                        <div class="projects_skills">
-                            <pre>By Using : HTML & CSS , JavaScript, API [Email validator]</pre>
-                        </div>
-                        <br>
-                        <a href="https://ismail-dcode.github.io/myProject/" target="_blank" class="project_button">
-                            <i class="fa-solid fa-link"></i>
-                            <span>Visit Project</span>
-                        </a>
+        <div class="project_container">
+            <article class="project_card">
+                <a href="" target="_blank" class="project_image">
+                    <img src="Screenshot 2024-10-29 173715.png" alt="image" class="project_image">
+
+                </a>
+                <div class="project_data">
+
+                    <p class="project_detail">
+                        It is an email validator that checks whether the email is in the right format; if
+                        not,<br> It indicates that it is incorrect.
+                    </p>
+                    <br>
+                    <div class="projects_skills">
+                        <pre>By Using : HTML & CSS , JavaScript, API [Email validator]</pre>
                     </div>
-                </article>
-            </div>
-       
+                    <br>
+                    <a href="https://ismail-dcode.github.io/myProject/" target="_blank" class="project_button">
+                        <i class="fa-solid fa-link"></i>
+                        <span>Visit Project</span>
+                    </a>
+                </div>
+            </article>
+        </div>
+
     </section>
+    <!----------------------------------------------------------------------------------------------------------------------------------------->
+
     <div id="Contact">
         <div class="container">
             <div class="row">
@@ -127,11 +131,10 @@
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/ismail-shaikh-19798a335/" target="_blank"><i
                                 class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/Ismail-dcode/Ismail-dcode" target="_blank"><i
+                        <a href="https://github.com/Ismail-dcode/myProject" target="_blank"><i
                                 class="fa-brands fa-github"></i></a>
 
                     </div>
-                   
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
@@ -144,14 +147,23 @@
                 </div>
             </div>
         </div>
-        <div class="copyright">
-            <p>Copyright @Ismail <i class="fa-solid fa-heart"></i> | All Rights Are Reserved </p>
-        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @Ismail <i class="fa-solid fa-heart"></i> | All Rights Are Reserved </p>
+    </div>
     </div>
 
 
-
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: [' UI/UX [Front end developer]','Aspiring AI engineer', 'Expert in using GEN AI Tools ', 'Web Developer '],
+            typeSpeed: 50,
+        })
+    </script>
     <script src="newport.js"></script>
+
+
 
 </body>
 
