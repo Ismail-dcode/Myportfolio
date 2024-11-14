@@ -10,14 +10,18 @@ html {
 }
 
 body {
-    background: #080808;
+    background: #000000;
 }
 
 .container {
     padding: 10px 10%;
 }
-
-nav {
+#element{
+    font-size: 35px;
+    color:rgb(123, 0, 123) ;
+}
+nav{
+  
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,6 +33,7 @@ nav {
 }
 
 nav ul li {
+    
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
@@ -42,10 +47,6 @@ nav ul li a {
 
 }
 
-#element {
-    color: rgb(149, 26, 149);
-    margin-bottom: 150px;
-}
 
 nav ul li a::after {
     content: '';
@@ -63,12 +64,14 @@ nav ul li a:hover::after {
 }
 
 .header-text {
+    margin-left:250px ;
     color: aliceblue;
     margin-top: 15%;
     font-size: 30px;
 }
 
 .header-text h1 {
+   
     font-size: 60px;
     margin-top: 15px;
     margin-bottom: 10px;
@@ -76,8 +79,11 @@ nav ul li a:hover::after {
 
 .header-text h1 span {
 
+
     color: rgb(130, 12, 130);
 }
+/* <!------------------------------------------------------------------------- */
+
 
 #about {
    
@@ -109,13 +115,13 @@ nav ul li a:hover::after {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.nano {
+.sub-title {
     font-size: 40px;
     font-weight: 600;
     color: #fff;
 }
 
-.tab-title {
+.tab-titles {
     display: flex;
     margin: 20px 0 40;
 }
@@ -219,7 +225,7 @@ nav ul li a:hover::after {
     font-size: 19px;
     color: #521a4a;
 }
-
+/* <!---------------------------------------------------------------------  */
 .contact-left {
     color: #fff;
     flex-basis: 30%;
@@ -297,6 +303,7 @@ form textarea {
     padding: 15px;
     margin: 15px 0;
     color: #fff;
+    font-size: 18px;
     border-radius: 6px;
 
 }
@@ -322,23 +329,36 @@ form .btn2 {
     color: rgb(130, 12, 130);
 }
 
-nav i {
+nav #sir{
     display: none;
 
 }
+/* <!-------------------------------------------------------------------------> */
+@media only screen and (max-width:600px) {
 
-@media only screen and (max-width:700px) {
 
     .header-text {
-        margin: 20%;
+        margin: auto;
+        margin-left: 40px;
         font-size: 20px;
+    }
+    #project{
+       
+       
+        width: auto;
+        font-size: 14px;
+    }
+    .project_data{
+        
+        font-size: 10px;
     }
 
     .header-text h1 {
         font-size: 45px;
     }
 
-    nav i {
+    nav #sir {
+        
         display: block;
         font-size: 25px;
         color: #fff;
@@ -350,9 +370,10 @@ nav i {
         top: 0;
         right: -200px;
         width: 200px;
-        height: 100vh;
+        height: 80vh;
         padding-top: 50px;
         z-index: 2;
+        transition: right 0.5s;
     }
 
     nav ul li {
@@ -360,13 +381,15 @@ nav i {
         margin: 25px;
     }
 
-    nav ul i {
+    nav ul #sir{
         position: absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;
     }
-
+    .sub-title{
+        font-size:40px;
+    }
     .about-col-1,
     .about-col-2 {
         flex-basis: 100%;
@@ -374,6 +397,9 @@ nav i {
 
     .about-col-1 {
         margin-bottom: 30px;
+    }
+    .about-col-2 {
+        font-size: 14px;
     }
 
     .tab-links {
