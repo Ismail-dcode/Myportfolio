@@ -12,29 +12,43 @@
 </head>
 
 <body>
+
+
+
     <div id="header">
         <div class="container">
             <nav>
-                <img src="logo3.jpeg-removebg-preview.png" class="logo">
+                <br>
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#Projects">Projects</a></li>
                     <li><a href="#Contact">Contact Me</a></li>
+                    <li>
+                        <label class="switch" onclick="myFunction()">
+                            <input type="checkbox" class="checkbox">
+                            <div class="slider"> </div>
+                        </label>
+                    </li>
+
+
+
                     <i id="sir" class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i id="sir" class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
         </div>
+
     </div>
     <div>
         <div class="header-text">
             <p>CS Engineering Student</p>
             <h1>Here , I'm <br><span>Shaikh Ismail</span></h1>
-           
+
             <span id="element"></span>
+
             <br>
-            <a href="Resume 4th Pdf.pdf" download class="btn btn2">Download CV</a>
+            <a href="Resume 1st Pdf.pdf" download class="btn btn2">Download CV</a>
         </div>
     </div>
     <!------------------------------------------------------------------------------------------------------------------------>
@@ -51,8 +65,8 @@
                         Nagar, and I'm really interested in technical fields like web application development and
                         generative AI tools.
                         Thus, as an intermediate front-end developer, I study [Fundamentals of GEN AI & AI tools]
-                        <br>
-                        languages: JavaScript, C++, HTML, and CSS.
+                        <br><br>
+                        languages : JavaScript,C++/C, HTML & CSS,Python <br> Version Control : Git/Github.
                     </p>
 
                     <div class="tab-titles">
@@ -63,11 +77,12 @@
                         <br>
 
                         <ul>
-                            <li><span>UI/UX</span><br>Intermediate WebSite Designer </li>
-                            <li><span>Web Development </span><br>WebSites Development</li>
-                            <li><span> Aspiring AI Engineer</span><br> learning concept like , <br> GEN AI , AI
-                                Fundamentals , AI tools</li>
-                            <li><span>Languages </span><br>JavaScript , C++ , HTML & CSS</li>
+                            <li><span>UI/UX</span><br>intermediate Web Designer  </li>
+                            <li><span>Web Development </span><br>Front-End Development</li>
+                            <li><span>Version Control  </span><br>Git & Github</li>
+                            <li><span>AI Tools</span><br> GPT ,CO-PILot,GEMENi <br> GEN AI , AI
+                                Fundamentals </li>
+                            <li><span>Languages </span><br>JavaScript , C++/C , Python , HTML & CSS</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
@@ -87,51 +102,19 @@
     </div>
 
     <!----------------------------------------------------------------------------------------------------------->
-
-    <h4 id="Projects"></h4>
-    <h2 class="Section-title">Recent <span>Projects</span></h2>
-    <section class="my_projects" id="project">
-
-
-        <div class="project_container">
-            <article class="project_card">
-                <a href="" target="_blank" class="project_image">
-                    <img src="Screenshot 2024-10-29 173715.png" alt="image" class="project_image">
-
-                </a>
-                <div class="project_data">
-
-                    <p class="project_detail">
-                        It is an email validator that checks whether the email is in the right format; if
-                        not,<br> It indicates that it is incorrect.
-                    </p>
-                    <br>
-                    <div class="projects_skills">
-                        <pre>By Using : HTML & CSS , JavaScript, API [Email validator]</pre>
-                    </div>
-                    <br>
-                    <a href="https://ismail-dcode.github.io/myProject/" target="_blank" class="project_button">
-                        <i class="fa-solid fa-link"></i>
-                        <span>Visit Project</span>
-                    </a>
-                </div>
-            </article>
-        </div>
-
-    </section>
     <!----------------------------------------------------------------------------------------------------------------------------------------->
 
     <div id="Contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
+                    <h1 class="sub-title">Let's Connect </h1>
                     <p><i class="fa-regular fa-envelope"></i>ismailpromt2i@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i>77xxxxxxx0</p>
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/ismail-shaikh-19798a335/" target="_blank"><i
                                 class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/Ismail-dcode" target="_blank"><i
+                        <a href="https://github.com/Ismail-dcode/myProject" target="_blank"><i
                                 class="fa-brands fa-github"></i></a>
 
                     </div>
@@ -157,7 +140,7 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-            strings: [' UI/UX [Front end developer]','Aspiring AI engineer', 'Expert in using GEN AI Tools ', 'Web Developer '],
+            strings: [' UI/UX [Front end developer]', 'Aspiring AI engineer', 'Expert in using GEN AI Tools ', 'Web Developer '],
             typeSpeed: 50,
         })
     </script>
