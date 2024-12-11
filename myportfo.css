@@ -449,7 +449,7 @@ nav #sir{
         top: 0;
         right: -200px;
         width: 200px;
-        height: 80vh;
+        height: 100vh;
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
