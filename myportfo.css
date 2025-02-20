@@ -241,8 +241,6 @@ nav ul li a:active {
     color: rgb(130, 12, 130);
 }
 
-/* <!------------------------------------------------------------------------- */
-
 
 #about {
 
@@ -372,6 +370,7 @@ nav ul li a:active {
     padding: 80px;
     margin-bottom: 200px;
     padding: 1rem;
+    margin-top: 10px;
     border-radius: 2rem;
     background-color: rgb(33, 33, 35);
 }
@@ -380,7 +379,7 @@ nav ul li a:active {
     font-size: 50px;
     color: #fff;
     text-align: center;
-    padding-top: 120px;
+    padding-top: 30px;
     margin: 40px 0px;
 }
 
