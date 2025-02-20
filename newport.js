@@ -39,6 +39,42 @@ form.addEventListener('submit', e => {
         .catch(error => console.error('Error!', error.message))
 
     })
+
+
+function toggleMenu() {
+    const menu = document.querySelector('nav ul');
+    const menuBtn = document.getElementById('menu-btn');
     
-     
+    menu.classList.toggle('show');
+    
+   
+    if (menu.classList.contains('show')) {
+        menuBtn.innerHTML = '<i class="fas fa-times"></i>';
+    } else {
+        menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+    }
+}
+
+
+document.addEventListener('click', (e) => {
+    const menu = document.querySelector('nav ul');
+    const menuBtn = document.getElementById('menu-btn');
+    
+    if (!menu.contains(e.target) && !menuBtn.contains(e.target) && menu.classList.contains('show')) {
+        toggleMenu();
+    }
+});
+
+document.querySelectorAll('nav ul li a').forEach(link => {
+    link.addEventListener('click', () => {
+        const menu = document.querySelector('nav ul');
+        if (menu.classList.contains('show')) {
+            toggleMenu();
+        }
+    });
+});
+function toggleMenu() {
+    const menu = document.querySelector('nav ul');
+    menu.classList.toggle('show');
+}
     
