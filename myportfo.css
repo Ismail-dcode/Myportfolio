@@ -161,7 +161,7 @@ nav ul li a {
     z-index: 1;
 }
 
-/* Glowing hover effect */
+
 nav ul li a::before {
     content: '';
     position: absolute;
@@ -180,8 +180,7 @@ nav ul li a:hover::before {
     width: 200%;
     height: 200%;
 }
-
-/* Underline effect */
+
 nav ul li a::after {
     content: '';
     position: absolute;
@@ -197,20 +196,18 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-/* Active state */
 nav ul li a.active {
     background: rgba(130, 12, 130, 0.2);
     box-shadow: 0 0 20px rgba(130, 12, 130, 0.3);
 }
 
-/* Text glow on hover */
+
 nav ul li a:hover {
     color: #fff;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     transform: translateY(-2px);
 }
-
-/* Add subtle bounce on click */
+
 nav ul li a:active {
     transform: scale(0.95);
 }
@@ -670,7 +667,7 @@ nav #sir {
     display: block;
 }
 
-/* Project Section Styles */
+
 #projects {
     padding: 80px 0;
 }
@@ -784,7 +781,7 @@ nav #sir {
     transform: translateY(-2px);
 }
 
-/* Responsive Design */
+
 @media (max-width: 1024px) {
     .projects-container {
         grid-template-columns: repeat(2, 1fr);
@@ -810,8 +807,7 @@ nav #sir {
         padding: 6px 12px;
     }
 }
-
-/* Responsive Design Styles */
+
 @media only screen and (max-width: 600px) {
     /* Header & Navigation */
     .header-text {
@@ -861,7 +857,7 @@ nav #sir {
         display: block;
     }
 
-    /* Theme Toggle */
+  
     .switch {
         margin: 15px auto;
     }
@@ -919,7 +915,7 @@ nav #sir {
         padding: 10px;
     }
 
-    /* Contact Section */
+ 
     .contact-left, 
     .contact-right {
         flex-basis: 100%;
@@ -948,7 +944,7 @@ nav #sir {
         font-size: 18px;
     }
 
-    /* Menu Toggle Button */
+   
     #menu-btn {
         display: block;
         position: fixed;
@@ -961,12 +957,12 @@ nav #sir {
         cursor: pointer;
     }
 
-    /* Container Spacing */
+    
     .container {
         padding: 10px 20px;
     }
 
-    /* Section Titles */
+   
     .Section-title {
         font-size: 28px;
         margin: 30px 0;
@@ -977,7 +973,7 @@ nav #sir {
     }
 }
 
-/* Tablet Responsive Design */
+
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
     .projects-container {
         grid-template-columns: repeat(2, 1fr);
@@ -1008,8 +1004,7 @@ nav #sir {
         margin-bottom: 30px;
     }
 }
-
-/* Menu Toggle JavaScript */
+
 
 .social-icons-nav {
     display: flex;
@@ -1067,7 +1062,7 @@ nav #sir {
     transform: scale(1.1);
 }
 
-/* Add responsive styles for mobile */
+
 @media only screen and (max-width: 600px) {
     .social-icons-nav {
         position: absolute;
@@ -1147,7 +1142,7 @@ nav #sir {
     box-shadow: 0 5px 15px rgba(130, 12, 130, 0.2);
 }
 
-/* Responsive design for skills section */
+
 @media only screen and (max-width: 600px) {
     .skills-container {
         gap: 1rem;
@@ -1245,8 +1240,7 @@ nav #sir {
     color: rgb(130, 12, 130) !important;
     font-weight: 500;
 }
-
-/* Responsive design for education section */
+
 @media only screen and (max-width: 600px) {
     .education-container {
         gap: 1rem;
