@@ -13,29 +13,34 @@
 
 <body>
 
-
-
     <div id="header">
         <div class="container">
             <nav>
+                <div id="menu-btn" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
                 <br>
+                <div class="social-icons-nav">
+                    <a href="https://www.linkedin.com/in/ismail-shaikh-19798a335/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Ismail-dcode/myProject" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                
+                </div>
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#Eduction">Education</a></li>
                     <li><a href="#Contact">Contact Me</a></li>
-                    <li>
-                        <label class="switch" onclick="myFunction()">
-                            <input type="checkbox" class="checkbox">
-                            <div class="slider"> </div>
-                        </label>
-                    </li>
+                
 
 
 
                     <i id="sir" class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
-                <i id="sir" class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
         </div>
 
@@ -63,16 +68,21 @@
 
                         <h1 class="sub-title">About Me</h1>
                         <br>
-                        <p> My name is<span class="class"> SHAIKH ISMAIL SARDAR</span> I study computer science engineering at MIT Aurangabad/Chh.
-                            Sambhaji Nagar, and I have a strong interest in technological domains like generative AI
-                            tools and web application development.
+                        <p> My name is<span class="class"> SHAIKH ISMAIL SARDAR</span> Computer Science Engineering Student at Maharashtra Institute of Technology, Aurangabad/Chh.
+                            Sambhaji Nagar.
+                            <br>
+                            <br>
+                             know about <span class="class">Android and Web Development</span> with Frameworks like React Native, Node.js and JavaScript.
+                            Passionate about exploring new technologies and development tools, staying updated with industry trends.
+                            <br>
+                            <br>
+                            Proficient in <span class="class">JavaScript, C++/C, and Python</span>, with hands-on experience in React Native, Node.js, and Express.js.
                             <br>
                             <br>
                             Expanding my technical understanding of AI principles and technologies such as <span class="class">GPT,GEMENI
-                                CO-Pilot</span>  content generation.
+                                CO-Pilot</span>  picture generation, and video editing. I study [Fundamentals of GEN AI & AI tools] .
                             <br>
                             <br>
-                            Thus, as an intermediate<span class="class"> Front-end developer</span> I study [Fundamentals of Designing & User Interface]
                     </div>
 
 
@@ -91,33 +101,75 @@
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <br>
+                    <div class="skills-container">
+                        <div class="skill-category">
+                            <h3>Development</h3>
+                            <div class="skills-grid">
+                                <span class="skill-tag">Front-end Development</span>
+                                <span class="skill-tag">Backend Development</span>
+                                <span class="skill-tag">Responsive Design</span>
+                                <span class="skill-tag">App & Web </span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3> Languages & Frameworks</h3>
+                            <div class="skills-grid">
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">C++/C</span>
+                                <span class="skill-tag">HTML | CSS</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">Express.js</span>
+                                <span class="skill-tag">React Native</span>
+                            </div>
+                        </div>
 
-                    <ul>
-                        <li><span>UI/UX</span><br>intermediate Web Designer </li>
-                        <li><span>Web Development </span><br>Front-End Development</li>
-                        <li><span>Version Control </span><br>Git & Github</li>
-                        <li><span>Deployment Server </span><br>Github Pages</li>
-                        <li><span>AI Tools</span><br> GPT ,CO-PILot,GEMENi <br> GEN AI , AI
-                            Fundamentals </li>
-                        <li><span>Languages</span><br> JavaScript, C++/C , Python , HTML & CSS</li>
-                    </ul>
+                        <div class="skill-category">
+                            <h3> Technologies &  Tools</h3>
+                            <div class="skills-grid">
+                               
+                                <span class="skill-tag">GPT | Copilot | GEMINI</span>
+                                <span class="skill-tag">GitHub Pages </span>
+                                <span class="skill-tag">Git | Github</span>
+                                <span class="skill-tag">VS Code </span>
+                                <span class="skill-tag">Android Studio </span>
+                                <span class="skill-tag">Vercel</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="tab-contents" id="education">
+                    <div class="education-container">
+                        <div class="education-category">
+                            <h3>Current Education</h3>
+                            <div class="education-item">
+                                <span class="education-period">2023-2027</span>
+                                <h4>Computer Science Engineering</h4>
+                                <p>Maharashtra Institute of Technology</p>
+                                <p class="education-location">Aurangabad/Chh. Sambhaji Nagar</p>
+                            </div>
+                        </div>
 
+                        <div class="education-category">
+                            <h3>Previous Education</h3>
+                            <div class="education-item">
+                                <span class="education-period">Till 2023</span>
+                                <h4>Higher Secondary Education (10+2)</h4>
+                                <p>Udaygiri Vidyalaya & Junior College</p>
+                                <p class="education-location">Udgir, Dist. Latur</p>
+                            </div>
+                        </div>
 
-                    <ul>
-                       <br>
-                        Right now, I'm pursuing a degree in Computer Science at MIT (Maharashtra Institute of Technology)
-                        in Aurangad/Chh. Sambhaji Nagar.
-                        <br>
-                        The expected year of graduation is 2027.
-                        <br>
-                        <br>
-                        <li><span>Till 2023</span><br>Completed 10+2 From Home Town Udgir Dist. Latur</li>
-                        <li><span>2023-2027</span><br>CS Engineering From MIT Aurangabad/Chh. Sambhaji Nagar
-                        </li>
-
-                    </ul>
+                        <div class="education-category">
+                            <h3>Expected</h3>
+                            <div class="education-item">
+                                <span class="education-period">2027</span>
+                                <h4>B.Tech Graduation</h4>
+                                <p>Computer Science Engineering</p>
+                                <p class="education-location">MIT, Aurangabad/Chh. Sambhaji Nagar</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -127,10 +179,53 @@
 
     </div>
 
+    <section id="projects">
+        <h1 class="Section-title">My <span>Projects</span></h1>
+        <div class="projects-container">
+            <!-- First Project Card -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="Project-1.png" alt="Project 1">
+                </div>
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>A modern portfolio website built with HTML, CSS, and JavaScript featuring smooth animations and responsive design.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Ismail-dcode/Myportfolio" class="github-btn" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-
-    <!----------------------------------------------------------------------------------------------------------->
-    <!----------------------------------------------------------------------------------------------------------------------------------------->
+            <!-- Second Project Card -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="Project-2.png" alt="Project 2">
+                </div>
+                <div class="project-content">
+                    <h3>Weather App</h3>
+                    <p>Real-time weather application using Weather API. Features include location detection</p>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>API</span>
+                        
+                    </div>
+                    <div class="project-links">
+                        <a href=" https://ismail-dcode.github.io/WeatherApp/" class="demo-btn" target="_blank">Live Demo</a>
+                        <a href="https://github.com/Ismail-dcode/WeatherApp" class="github-btn" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <div id="Contact">
         <div class="container">
@@ -142,9 +237,8 @@
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/ismail-shaikh-19798a335/" target="_blank"><i
                                 class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/Ismail-dcode" target="_blank"><i
+                        <a href="https://github.com/Ismail-dcode/myProject" target="_blank"><i
                                 class="fa-brands fa-github"></i></a>
-
                     </div>
                 </div>
                 <div class="contact-right">
@@ -168,7 +262,7 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-            strings: [' UI/UX designs', 'Aspiring AI engineer', 'Expert in using GEN AI Tools ', 'Web Developer [Front end developer]'],
+            strings: [ 'Aspiring AI engineer',' Developer [App || Web] ' ],
             typeSpeed: 50,
         })
     </script>
