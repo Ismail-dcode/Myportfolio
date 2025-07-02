@@ -712,6 +712,7 @@ nav #sir {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    background: none;
     transition: transform 0.5s ease;
 }
 
@@ -1154,6 +1155,11 @@ nav #sir {
     box-shadow: 0 5px 15px rgba(130, 12, 130, 0.2);
 }
 
+.skill-tag i {
+    font-size: 2em !important;
+    vertical-align: middle;
+    margin-right: 8px;
+}
 
 @media only screen and (max-width: 600px) {
     .skills-container {
@@ -1284,4 +1290,12 @@ nav #sir {
     .education-container {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+.icon-svg {
+  vertical-align: middle;
+  margin-right: 8px;
+  width: 2em;
+  height: 2em;
+  display: inline-block;
 }
